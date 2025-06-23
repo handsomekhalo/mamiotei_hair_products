@@ -22,12 +22,13 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: #1f240b;
+  background-color: hsl(72, 53%, 9%);
 }
 
 .logo {
   font-size: 1.5rem;
   font-weight: bold;
+  color: white;
 }
 
 nav ul {
@@ -145,8 +146,13 @@ header {
     gap: 1rem;
   }
 
+@media (max-width: 768px) {
   .logo {
-    margin: 0;
+    font-size: 1rem;
+    max-width: 150px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
   }
 }
 
