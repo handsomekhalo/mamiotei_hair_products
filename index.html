@@ -1,145 +1,257 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-      <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mamotei  Beauty</title>
-  <link rel="stylesheet" href="./css/style.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mamotei Beauty</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-  <nav>
-    <div class="logo">
-        Mamotei Organic Hair Products</div>
-
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#products">Products</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-
-  </nav>
-
-  <header class="body">
-
-    <div class="section hair">
-      <div class="image-circle hair-img"></div>
-
-       <div class="text">
-        <h1>Hair Care Products</h1>
-        <p>Explore hair oils, scalp treatments, and more...</p>
-        <a href="#" class="btn-outline">Shop</a>
-      </div>
-
-        <div class="image-circle skin-img"></div>
-
-     
+    <!-- Loading Overlay -->
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="loading-spinner"></div>
     </div>
- 
 
-    <div class="section_about text-center">
-      <h2>About</h2>
-
-      <div class="brief_about">
-         <div>
-        About Mamotei 
-Nourish. Strengthen. Shine – The Mamotei  Way.
-
-At Mamotei , we believe that healthy hair is more than just appearance—it's a statement of confidence, culture, and care. Born from a deep understanding of natural hair needs, Mamotei  offers a premium range of hair treatment products crafted to restore, protect, and enhance your hair’s natural beauty.
-
-Our unique formulas are infused with nature’s finest ingredients, carefully chosen to tackle dryness, breakage, and scalp irritation while promoting growth and moisture retention. Whether you wear your hair natural, relaxed, braided, or styled, Mamotei  is designed to work with your crown—not against it.
-
-Proudly made with love and purpose, Mamotei  is not just a product—it’s a promise of healthier, stronger, and more radiant hair for all.
-
-
-      </div>
-    </div>
-</header>
-
- <!-- Product Section -->
-<section id="products" class="container my-5">
-  <h2 class="text-center mb-4">Our Products</h2>
-
-  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4 product-grid">
-    <!-- Repeat with actual images, names, and prices -->
-    <div class="col">
-      <div class="card h-100 text-center">
-        <img src="./css/images/blackfood.jpg" class="card-img-top zoomable" alt="Product 1">
-        <div class="card-body">
-          <h5 class="card-title">Shea Butter</h5>
-    
-          <button class="btn btn-outline-light">Order Now</button>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#home">Mamotei Organic Hair Products</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#products">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </div>
-    </div>
+    </nav>
 
-
-    <div class="col">
-      <div class="card h-100 text-center">
-        <img src="./css/images/shampoo.jpg" class="card-img-top zoomable" alt="Product 1">
-        <div class="card-body">
-          <h5 class="card-title">Shampoo</h5>
-          <button class="btn btn-outline-light">Order Now</button>
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="hero-content">
+                        <h1 class="hero-title">Natural Hair Care Excellence</h1>
+                        <p class="hero-subtitle">Nourish. Strengthen. Shine – The Mamotei Way. Transform your hair with our premium organic products.</p>
+                        <a href="#products" class="cta-button">Explore Products</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="image-circle hair-img">
+                                
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="image-circle skin-img"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
+    </section>
 
-
-   <div class="col">
-      <div class="card h-100 text-center">
-        <img src="css/images/mini psray.jpg" class="card-img-top zoomable" alt="Product 1">
-        <div class="card-body">
-          <h5 class="card-title">Mini Spray </h5>
-          <button class="btn btn-outline-light">Order Now</button>
+    <!-- About Section -->
+    <section id="about" class="about-section fade-in">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="about-card">
+                        <h2 class="about-title text-center">About Mamotei</h2>
+                        <p class="lead text-center mb-4">At Mamotei, we believe that healthy hair is more than just appearance—it's a statement of confidence, culture, and care.</p>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p>Born from a deep understanding of natural hair needs, Mamotei offers a premium range of hair treatment products crafted to restore, protect, and enhance your hair's natural beauty.</p>
+                                <p>Our unique formulas are infused with nature's finest ingredients, carefully chosen to tackle dryness, breakage, and scalp irritation while promoting growth and moisture retention.</p>
+                            </div>
+                            <div class="col-md-6">
+                                <p>Whether you wear your hair natural, relaxed, braided, or styled, Mamotei is designed to work with your crown—not against it.</p>
+                                <p>Proudly made with love and purpose, Mamotei is not just a product—it's a promise of healthier, stronger, and more radiant hair for all.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
+    </section>
 
-       <div class="col">
-      <div class="card h-100 text-center">
-                <img src="css/images/organic_hair_spray.jpg" class="card-img-top zoomable" alt="Product 1">
-
-        <div class="card-body">
-          <h5 class="card-title">Combo</h5>
-            <button class="btn btn-outline-light">Order Now</button>
-
+    <!-- Products Section -->
+    <section id="products" class="products-section fade-in">
+        <div class="container">
+            <h2 class="section-title">Our Products</h2>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="product-card">
+                        <div class="product-img" style="background-image: url('./css/images/food.jpg');"></div>
+                        <div class="product-body">
+                            <h5 class="product-title">Shea Butter</h5>
+                            <p class="text-muted">Natural moisturizing treatment for dry and damaged hair</p>
+                            <button class="order-btn">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="product-card">
+                        <div class="product-img" style="background-image: url('./css/images/shampoo.jpg');"></div>
+                        <div class="product-body">
+                            <h5 class="product-title">Organic Shampoo</h5>
+                            <p class="text-muted">Gentle cleansing formula for all hair types</p>
+                            <button class="order-btn">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="product-card">
+                        <div class="product-img" style="background-image: url('./css/images/sprays.jpg');"></div>
+                        <div class="product-body">
+                            <h5 class="product-title">Mini Spray</h5>
+                            <p class="text-muted">Convenient travel-size moisturizing spray</p>
+                            <button class="order-btn">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="product-card">
+                        <div class="product-img" style="background-image: url('./css/images/4\ hait\ products.png');"></div>
+                        <div class="product-body">
+                            <h5 class="product-title">Hair Care Combo</h5>
+                            <p class="text-muted">Complete hair care set for optimal results</p>
+                            <button class="order-btn">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="product-card">
+                        <div class="product-img" style="background-image: url('./css/images/moringa_hair_food.png');"></div>
+                        <div class="product-body">
+                            <h5 class="product-title">Moringa Hair Food</h5>
+                            <p class="text-muted">Nutrient-rich treatment for healthy hair growth</p>
+                            <button class="order-btn">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <div class="product-card">
+                        <div class="product-img" style="background-image: url('./css/images/conditioner_shampoo.png');"></div>
+                        <div class="product-body">
+                            <h5 class="product-title">Hair Growth Spray</h5>
+                            <p class="text-muted">Stimulating formula for stronger, longer hair</p>
+                            <button class="order-btn">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
+    </section>
 
-       <div class="col">
-      <div class="card h-100 text-center">
-        <img src="css/images/organic hairfood.jpg" class="card-img-top zoomable" alt="Product 1">
-        <div class="card-body">
-          <h5 class="card-title">Moringa Hair Food</h5>
-          <button class="btn btn-outline-light">Order Now</button>
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section fade-in">
+        <div class="container">
+            <h2 class="section-title">Need Help or Want to Order More of Our Products?</h2>
+            <p class="lead">Reach out to us directly for personalized assistance and orders</p>
+            <p>Call us at <strong>+27 673 028 811</strong> or message us on WhatsApp</p>
+            <a href="https://wa.me/27673028811" class="whatsapp-btn" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+                Contact Us on WhatsApp
+            </a>
         </div>
-      </div>
-    </div>
+    </section>
 
-       <div class="col">
-      <div class="card h-100 text-center">
-        <img src="css/images/sprays.jpg" class="card-img-top zoomable" alt="Product 1">
-        <div class="card-body">
-          <h5 class="card-title">Spray</h5>
-          <button class="btn btn-outline-light">Order Now</button>
-        </div>
-      </div>
-    </div>
-    <!-- Copy and change content for 11 more products -->
-  </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Loading animation
+        window.addEventListener('load', function() {
+            setTimeout(function() {
+                document.getElementById('loadingOverlay').style.opacity = '0';
+                setTimeout(function() {
+                    document.getElementById('loadingOverlay').style.display = 'none';
+                }, 500);
+            }, 1000);
+        });
 
-  
+        // Scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
 
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
 
-  <section id="contact" class="text-center py-5">
-  <h2>Need Help or Want to Order?</h2>
-  <p>Reach out to us directly on +27673028811 or WhatsApp</p>
-  <a href="https://wa.me/27673028811" class="btn-whatsapp" target="_blank">
-    Contact Us on WhatsApp
-  </a>
-</section>
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
 
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.style.background = 'rgba(26, 32, 44, 0.98)';
+                nav.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.2)';
+            } else {
+                nav.style.background = 'rgba(26, 32, 44, 0.95)';
+                nav.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.1)';
+            }
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Product card stagger animation
+        const productCards = document.querySelectorAll('.product-card');
+        productCards.forEach((card, index) => {
+            card.style.animationDelay = `${index * 0.1}s`;
+        });
+
+        // Add click effects to buttons
+        document.querySelectorAll('.order-btn, .cta-button, .whatsapp-btn').forEach(button => {
+            button.addEventListener('click', function(e) {
+                let ripple = document.createElement('span');
+                ripple.classList.add('ripple');
+                this.appendChild(ripple);
+                
+                let x = e.clientX - e.target.offsetLeft;
+                let y = e.clientY - e.target.offsetTop;
+                
+                ripple.style.left = x + 'px';
+                ripple.style.top = y + 'px';
+                
+                setTimeout(() => {
+                    ripple.remove();
+                }, 600);
+            });
+        });
+    </script>
 </body>
-</html>

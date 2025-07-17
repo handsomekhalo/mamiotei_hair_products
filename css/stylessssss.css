@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+body
+ {
+  background-color: #303a10;
+  font-family: 'Georgia', serif;
+  color: white;
+  overflow-x: hidden;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: hsl(72, 53%, 9%);
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+nav ul {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header {
+  padding: 2rem 1rem;
+}
+
+.body .section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+.image-circle {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+}
+
+.skin-img {
+  background-image: url('./images/braids.jpg');
+}
+
+.hair-img {
+  background-image: url('./images/messy afro.jpg');
+}
+
+.text {
+  max-width: 400px;
+  text-align: center;
+}
+
+.text h1 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.text p {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.btn-outline {
+  border: 2px solid white;
+  padding: 0.5rem 1.2rem;
+  text-decoration: none;
+  color: white;
+  border-radius: 25px;
+  transition: background 0.3s ease;
+}
+
+.btn-outline:hover {
+  background: white;
+  color: #303a10;
+}
+
+.brief_about {
+  padding: 2rem;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+}
+
+.product-grid .card {
+  background-color: #1f240b;
+  color: white;
+  border: none;
+}
+
+.product-grid .card img {
+  height: 400px;
+  object-fit: cover;
+}
+
+.btn-whatsapp {
+  background-color: #25d366;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 25px;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 2rem;
+}
+
+.btn-whatsapp:hover {
+  background-color: #1ebe57;
+  color: white;
+}
+
+/* Mobile tweaks */
+@media (max-width: 768px) {
+  .section {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+@media (max-width: 768px) {
+  .logo {
+    font-size: 1rem;
+    max-width: 150px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+}
+
+
+.zoomable {
+  cursor: zoom-in;
+  transition: transform 0.3s ease;
+}
+
+.zoomable:hover {
+  transform: scale(1.05);
+}
+}
